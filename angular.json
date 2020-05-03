@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "configuration-manager-frontend"
+    }
+  },
+  "defaultProject": "configuration-manager-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
