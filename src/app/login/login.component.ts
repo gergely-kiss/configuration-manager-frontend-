@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   doLogin(){
     const response = this.service.login(this.userName, this.password);
     response.subscribe(data => {
-    this.router.navigate(['home']);
+    this.router.navigate(['home', data]);
     });
   }
 

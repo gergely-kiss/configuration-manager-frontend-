@@ -13,11 +13,4 @@ export class RestApiService {
     const headers = new HttpHeaders({Authorization: 'Basic ' + btoa(userName + ':' + password)});
     return this.http.post('http://localhost:10001/api/admin/options', null, {headers, responseType: 'text' as 'json'});
   }
-  public getAllApp(){
-    const userName = 'config-manager';
-    const password = 'config_manager_password_password';
-    const headers = new HttpHeaders({Authorization: 'Basic ' + btoa(userName + ':' + password)});
-    return this.http.post('http://localhost:10001/api/admin/return_all_app', null, {headers, responseType: 'text' as 'json'});
-  }
-
 }
